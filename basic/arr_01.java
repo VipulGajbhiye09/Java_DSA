@@ -15,5 +15,10 @@ public class array {
        for (int i=0;i<arr.length;i++){
            System.out.print( arr[i] +" ");
        }
+          //output using for each loop
+        for each
+       for (int i: arr) {
+           System.out.print( i +" ");
+     }   
     }
 }
