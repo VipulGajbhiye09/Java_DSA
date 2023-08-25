@@ -6,6 +6,7 @@
 //ruleKey == "color" and ruleValue == colori.
 //ruleKey == "name" and ruleValue == namei.
 // Return the number of items that match the given rule.
+
 import java.util.Arrays;
 
 public class Q_1773 {
