@@ -6,8 +6,14 @@
 public class Q_1572 {
     public static void main(String[] args) {
         int[][] mat = new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-
-        diagonalSum(mat);
+        int[][] mat2 = new int[][] {
+                {1, 1, 1, 1},
+                {1, 1, 1, 1},
+                {1, 1, 1, 1},
+                {1, 1, 1, 1}
+        };
+        diagonalSum(mat);  // 3x3
+        diagonalSum(mat2); // 4x4
     }
 
     static int diagonalSum(int[][] mat) {
