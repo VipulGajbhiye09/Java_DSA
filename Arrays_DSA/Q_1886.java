@@ -13,10 +13,19 @@ public class Q_1886 {
 
 
     static boolean findRotation(int[][] mat, int[][] target) {
-        boolean ans=true;
-
-        
-        return ans;
+        int [][] ans = Arrays.copyOf(mat,mat.length);
+        System.out.println("init :"+Arrays.deepToString(ans));
+        for (int i = 0; i < 4; i++) {
+            if (Arrays.deepEquals(ans, target)) {
+                return true;
+            }
+            else {
+                ans=transpose(ans);
+                ans=flipMatrix(ans);
+            }
+            System.out.println(Arrays.deepToString(ans));
+        }
+    return false;
     }
     
     static int[][] transpose(int[][] matrix) {
