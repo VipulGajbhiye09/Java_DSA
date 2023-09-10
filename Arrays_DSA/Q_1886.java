@@ -30,10 +30,22 @@ public class Q_1886 {
             return ans;
         }
 
-
-
-
-
+    static int[][] flipMatrix(int[][] matrix) {
+        int [][] ans = new int[matrix.length][];
+        for (int i = 0; i < matrix.length; i++) {
+            if (ans[i]==null){
+                ans[i]=new int[matrix[i].length];
+            }
+            int k = matrix[i].length-1;  //k pointer for reverse traversal
+            for (int j = 0 ; j< matrix[i].length ; j++) {
+                ans[i][j]=matrix[i][k];
+                ans[i][k]=matrix[i][j];
+                k--;
+            }
+        }
+//        System.out.println(Arrays.deepToString(ans));
+        return ans;
+    }
 
 
 }
