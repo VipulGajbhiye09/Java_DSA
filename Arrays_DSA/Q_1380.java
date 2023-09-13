@@ -14,4 +14,9 @@ public class Q_1380 {
 
         return ans;
     }
+    static int minOfRow(int[] arr){
+        Arrays.sort(arr);
+        int ans=arr[0];
+        return ans;
+    }
 }
