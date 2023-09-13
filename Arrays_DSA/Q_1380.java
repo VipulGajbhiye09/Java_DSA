@@ -14,9 +14,20 @@ public class Q_1380 {
 
         return ans;
     }
+    
     static int minOfRow(int[] arr){
         Arrays.sort(arr);
         int ans=arr[0];
+        return ans;
+    }
+    
+    static int maxOfCol(int[][] mat,int col){
+        int [] arr = new int[mat.length];
+        for (int i = 0; i < mat.length; i++) {
+            arr[i]=mat[i][col];
+        }
+        Arrays.sort(arr);
+        int ans=arr[mat.length-1];
         return ans;
     }
 }
