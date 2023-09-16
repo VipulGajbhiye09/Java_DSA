@@ -22,4 +22,13 @@ public class Q_0073 {
             matrix[row][i]=0;
         }
     }
+    static void printMatrix(int[][] matrix){
+        System.out.println("Matrix :");
+        for (int[]i:matrix) {
+            for (int j:i) {
+                System.out.print(j+" ");
+            }
+            System.out.println("");
+        }
+    }
 }
