@@ -9,8 +9,31 @@ public class Q_0073 {
     }
 
     static void setZeroes(int[][] matrix) {
-
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        boolean[] zeroRows = new boolean[rows];
+        boolean[] zeroCols = new boolean[cols];
+        
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (matrix[i][j] == 0) {
+                    zeroRows[i] = true;
+                    zeroCols[j] = true;
+                }
+            }
+        }
+        for (int i = 0; i < rows; i++) {
+            if (zeroRows[i]) {
+                setRowZero(matrix, i);
+            }
+        }
+        for (int j = 0; j < cols; j++) {
+            if (zeroCols[j]) {
+                setColZero(matrix, j);
+            }
+        }
     }
+    
     static void setColZero(int[][] matrix,int col){
         for (int i = 0; i < matrix.length; i++) {
             matrix[i][col]=0;
