@@ -9,11 +9,12 @@ public class Q_0054 {
 
     public static ArrayList<Integer> spiralOrder(int[][] matrix) {
         ArrayList<Integer> ans = new ArrayList<>(matrix.length);
-        int count=0;
-        int ele_count=matrix.length*matrix[0].length;
+        int top,left,bottom,right;
+        top=left=0;
+        right=matrix[0].length-1;
+        bottom=matrix.length-1;
 
-
-
+        System.out.println(ans);
         return ans;
     }
 
