@@ -16,6 +16,15 @@ public class Q_0034 {
         int[] result=new int[]{-1,-1};
         int count=0;
 
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i]==target && count==0){
+                result[0]=result[1]=i;
+                count++;
+            }
+            if (nums[i]==target && count>0){
+                result[1]=i;
+            }
+        }
 
         System.out.println(Arrays.toString(result));
         return result;
