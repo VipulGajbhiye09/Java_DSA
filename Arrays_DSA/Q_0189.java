@@ -8,6 +8,19 @@ public class Q_0189 {
     }
 
     static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
+        int[] result = new int[n];
+
+        if (k == 0) {
+            return;
+        }
+        for (int i = 0; i < n; i++) {
+            result[(i + k) % n] = nums[i];
+        }
+
+        System.arraycopy(result, 0, nums, 0, n);
+        System.out.println(Arrays.toString(nums));
 
     }
 
