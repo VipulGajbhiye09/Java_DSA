@@ -27,5 +27,6 @@ public class Q_0075 {
                 nums[i]=2;
             }
         }
+        System.out.println(Arrays.toString(nums));
     }
 }
