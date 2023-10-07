@@ -18,5 +18,14 @@ public class Q_0075 {
             }
         }
 
+        for (int i = 0; i < nums.length; i++) {
+            if (i<c0){
+                nums[i]=0;
+            }else if (i>=c0 && i<c0+c1) {
+                nums[i]=1;
+            }else if(i>=c1 && i<c0+c1+c2){
+                nums[i]=2;
+            }
+        }
     }
 }
